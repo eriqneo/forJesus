@@ -48,7 +48,7 @@ const Ministries = () => {
 
   return (
       <section>
-          <div className='ml-5 mt-8 grid grid-cols-1 md:grid-cols-4 gap-2 mb-7'> 
+          <div className='ml-5 mt-8 grid grid-cols-1 md:grid-cols-4 gap-2 mb-11'> 
               {data.map((item) => (
                   <div key={item.title} className='max-w-sm rounded overflow-hidden shadow-lg' >
                       <img src={item.image} alt="" className='w-full' loading='eager' />

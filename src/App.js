@@ -1,5 +1,6 @@
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -7,6 +8,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import NotFound from './Pages/NotFound';
 import Jcc from './Pages/Jcc';
+import Contact from './Pages/Contact';
 
 import './App.css';
 import { useEffect } from 'react';
@@ -25,6 +27,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/jcc' element={<Jcc />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
       </Routes> 
       <Footer />
