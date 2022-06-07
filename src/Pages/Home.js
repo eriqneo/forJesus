@@ -1,7 +1,9 @@
 import React from 'react'
+import Sermons from './PageComponent/Sermons'
 
 const Home = () => {
   return (
+    <section>
     <main className='home text-gray-100 h-max pb-20 '>
       <div className='pt-7 pb-7 text-center'>
         <h1 className='text-7xl'>MARK KEGOHI MINISTRIES</h1>
@@ -13,8 +15,9 @@ const Home = () => {
         </p>
         <button className='rounded-lg bg-purple-900 py-4 px-7 text-white hover:bg-purple-700 border border-white mt-2'>Join Us</button>
       </div>
-
-    </main>
+      </main>
+      <Sermons />
+    </section>
   )
 }
   

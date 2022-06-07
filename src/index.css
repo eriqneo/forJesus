@@ -22,9 +22,10 @@ code {
   background-image:url( '../public/bsp.jpg' );
   background-size: cover;
   background-repeat: no-repeat;
+  image-rendering: crisp-edges;
 }
 .watch {
-  background-image: url('../public/jcc8.jpg'),;
+  background-image: url('../public/jcc8.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
