@@ -1,9 +1,11 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 const Contact = () => {
-/* 
- src="https://www.google.com/maps/embed/v1/place?q=jesus+celebration+centre+kisumu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlemaps-code" rel="nofollow" href="https://www.embed-map.com" id="authorizemap-data">https://www.embed-map.com</a><style>#embeddedmap-canvas .text-marker{}.map-generator{max-width: 100%; max-height: 100%; background: none;</style></div>
-*/
+  //Go to Top of page after Loading
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
 
   return (
       <section className='text bg-gray-300 body-font flex flex-col relative'>
@@ -70,7 +72,8 @@ const Contact = () => {
                       </div>
                   </div>
               </div>
-          </form>
+      </form>
+      <h1 className='text-2xl text-gray-900 font-medium title-font text-center pt-3'>Get Directions <i className='bx-fw bx bx-directions bx-md'></i></h1>
           <div className='container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap'>
               <div className='lg:w-full md:w-1/2 bg-gray-700 rounded-lg overflow-hidden sm:mr-10 p-32 md:p-52 flex items-end justify-start relative'>
               <div className='w-1/2'>

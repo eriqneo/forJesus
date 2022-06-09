@@ -1,6 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Ministries = () => {
+    //Go to Top of page after Loading
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     const data = [
         {
             image: "./jcc1.jpg",
@@ -51,13 +57,15 @@ const Ministries = () => {
           <div className='ml-5 mt-8 grid grid-cols-1 md:grid-cols-4 gap-2 mb-11'> 
               {data.map((item) => (
                   <div key={item.title} className='max-w-sm rounded overflow-hidden shadow-lg' >
-                      <img src={item.image} alt="" className='w-full' loading='eager' />
+                      <img src={item.image} alt="" className='w-full' loading='lazy' />
                       <div className='px-6 py-4'>
                           <div className='font-bold text-xl mb-2'>{item.title} </div>
                           <p className='text-gray-700 text-base'>{item.desc} </p>
                       </div>
                       <div className='mb-2 block text-center'>
-                          <button className='rounded-lg bg-purple-900 py-4 px-7 text-white hover:bg-purple-700 border border-white mt-2'>{item.button} </button> 
+                               <Link to = '/contact'>
+                                 <button className='rounded-lg bg-purple-900 py-4 px-7 text-white hover:bg-purple-700 border border-white mt-2'>{item.button} </button> 
+                              </Link>
                       </div>
                   </div>
                ))}
@@ -68,7 +76,7 @@ const Ministries = () => {
                   <h4 className='font-bold text-3xl pt-4 mb-5'>Listen and Watch Us Live On</h4>
                   <div className='grid grid-cols-1 md:grid-cols-2'>
                       {services.map((service) => (
-                          <div className=''>
+                          <div className='' key={service.days}>
                               <h5 className='text-2xl font-bold pb-2'> {service.days}</h5>
                               <ul className='pb-2 text-xl'>
                                   <li> {service.time1} </li>

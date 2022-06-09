@@ -43,7 +43,18 @@ const Footer = () => {
       <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
       <div className='sm:flex sm:items-center sm:justify-between'>
         <span className='block text-sm text-gray-400 sm:text-center dark:text-gray-400'>© 2022 Bishop Mark Kegohi Ministries™. All Rights Reserved</span>
+        <div className='pr-16'>
+       <span className='text-gray-400 hover:text-white'><a href=".com">
+          <i className='bx bxl-facebook-circle bx-md'></i></a></span>
+        <span className='text-gray-400 hover:text-white'><a href=".com">
+            <i className='bx bxl-youtube bx-md'></i></a></span>
+           <span className='text-gray-400 hover:text-white'><a href=".com">
+            <i className='bx bxl-instagram-alt bx-md' ></i></a></span>
+           <span className='text-gray-400 hover:text-white'><a href=".com">
+          <i className='bx bxl-twitter bx-md' ></i></a></span>
       </div>
+      </div>
+      
 </footer>
 
   )

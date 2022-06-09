@@ -1,5 +1,6 @@
 import React from 'react'
 import Sermons from './PageComponent/Sermons'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -12,8 +13,10 @@ const Home = () => {
       <div className='block text-center ml-5 mt-5 p-6 max-w-sm bg-white rounded-lg border border-violet-800 shadow-md hover:bg-purple-900'>
         <h2 className='text-black font-bold text-4xl mb-1 hover:text-white '>Bishop Mark Kegohi</h2>
         <p className='text-purple-900 hover:text-white '>Is Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae animi dolore sit praesentium ratione nulla laudantium voluptatibus. Accusamus, molestiae.
-        </p>
-        <button className='rounded-lg bg-purple-900 py-4 px-7 text-white hover:bg-purple-700 border border-white mt-2'>Join Us</button>
+          </p>
+            <Link to = '/contact'>
+              <button className='rounded-lg bg-purple-900 py-4 px-7 text-white hover:bg-purple-700 border border-white mt-2'>Join Us</button>
+            </Link>
       </div>
       </main>
       <Sermons />
