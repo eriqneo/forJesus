@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 const Dropdown = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const showDropdown = () => setIsOpen(true);
     const hideDropdown = () => setIsOpen(false);
 
